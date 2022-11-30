@@ -16,4 +16,3 @@ function manipulaDados(operacao, controle) {
         pecas.value = parseInt(pecas.value) + 1;
     }
 }
-
