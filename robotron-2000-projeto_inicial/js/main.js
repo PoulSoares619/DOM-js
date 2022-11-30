@@ -1,5 +1,4 @@
-const somar = document.querySelector("#somar");
-const subtrair = document.querySelector("#subtrair");
+
 const bracos = document.querySelector("#bracos");
 
 const controle = document.querySelectorAll(".controle-ajuste");
