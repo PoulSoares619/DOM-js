@@ -1,20 +1,19 @@
-
-const bracos = document.querySelector("#bracos");
-
 const controle = document.querySelectorAll(".controle-ajuste");
 
 controle.forEach( (elemento) => {
     elemento.addEventListener("click", (evento) => {
-        manipulaDados(evento.target.textContent)
+        manipulaDados(evento.target.textContent, evento.target.parentNode);
     })
 })
 
 
-function manipulaDados(operacao) {
+function manipulaDados(operacao, controle) {
+    const pecas = controle.querySelector(".controle-contador");
+
     if(operacao === "-"){
-        bracos.value = parseInt(bracos.value) - 1;
+        pecas.value = parseInt(pecas.value) - 1;
     } else{
-        bracos.value = parseInt(bracos.value) + 1;
+        pecas.value = parseInt(pecas.value) + 1;
     }
 }
 
