@@ -1,5 +1,6 @@
 const controle = document.querySelectorAll("[data-controle]");
 
+//peças para  montagemn
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -34,6 +35,7 @@ const pecas = {
     }
 }
 
+//manipulando array com laço dee repet ao clicar
 controle.forEach( (elemento) => {
     elemento.addEventListener("click", (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode);
@@ -41,6 +43,8 @@ controle.forEach( (elemento) => {
 })
 
 
+
+//adc valor onclick
 function manipulaDados(operacao, controle) {
     const pecas = controle.querySelector("[data-contador]");
 
